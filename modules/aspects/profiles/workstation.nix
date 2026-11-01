@@ -1,6 +1,7 @@
 {
   flake-file.inputs = {
     pipewire-screenaudio.url = "github:IceDBorn/pipewire-screenaudio";
+    pano-scrobbler-flake.url = "github:kawaiiDango/pano-scrobbler-flake";
   };
 
   den.aspects.profiles.workstation.nixos = {
@@ -67,6 +68,8 @@
       bottles
 
       calibre
+
+      inputs'.pano-scrobbler-flake.packages.default
     ];
 
     networking.firewall.allowedTCPPorts = [
