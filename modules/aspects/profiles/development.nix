@@ -75,6 +75,7 @@
           dotnetCorePackages.sdk_10_0-bin
         ])
       mono
+      qtcreator
 
       # tmp
       nodejs
