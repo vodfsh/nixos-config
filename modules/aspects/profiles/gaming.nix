@@ -11,14 +11,12 @@
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
       protontricks.enable = true;
-
-      package = pkgs.steam.override {
-        extraPkgs = pkgs:
-          with pkgs; [
-            # Workaround xorg cursor issue
-            kdePackages.breeze
-          ];
-      };
+      extraPackages = with pkgs; [
+        # Workaround xorg cursor issue
+        kdePackages.breeze
+        pkgsi686Linux.gperftools
+        pkgsi686Linux.SDL2
+      ];
     };
 
     programs.gamemode.enable = true;
@@ -37,7 +35,6 @@
       xsettingsd
       xrdb
 
-      steam-run
       r2modman
       prismlauncher
       (lutris.override
