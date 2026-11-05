@@ -65,6 +65,7 @@
       nixd
       alejandra
       gh
+      pre-commit
 
       #uni
       jetbrains.idea
