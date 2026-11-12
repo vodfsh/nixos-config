@@ -68,6 +68,7 @@
       pre-commit
 
       #uni
+      opencode
       jetbrains.idea
       jetbrains.rider
       icu
