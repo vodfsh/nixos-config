@@ -68,7 +68,7 @@
       pre-commit
 
       #uni
-      opencode
+      unstable.opencode
       jetbrains.idea
       jetbrains.rider
       icu
