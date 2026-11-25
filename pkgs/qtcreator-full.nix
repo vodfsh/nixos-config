@@ -46,7 +46,7 @@
   qtEnv = buildEnv {
     name = "qt6-creator-env";
     paths = qtModules ++ sysLibs;
-    pathsToLink = ["/bin" "/include" "/lib" "/share"];
+    pathsToLink = ["/"];
     extraOutputsToInstall = ["dev" "bin"];
     # Qt modules overlap in /share (translations, cmake, mkspecs, etc.)
     ignoreCollisions = true;
