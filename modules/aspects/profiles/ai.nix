@@ -6,7 +6,7 @@
     swapConfig = pkgs.writeText "llama-swap.yaml" (builtins.toJSON {
       models = {
         main = {
-          cmd = "${server} --port \${PORT} -hf unsloth/Qwen3.5-9B-GGUF:Q4_K_M -c 16384 -n 4096 --flash-attn on --cache-type-k q8_0 --cache-type-v q8_0 --jinja";
+          cmd = "${server} --port \${PORT} -hf unsloth/Qwen3.5-9B-GGUF:Q4_K_M -c 65536 -n 8192 --n-gpu-layers auto --fit on --flash-attn on --cache-type-k q8_0 --cache-type-v q8_0 --jinja";
           ttl = 300; # unload after 5 min idle
         };
         small = {
