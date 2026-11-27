@@ -9,4 +9,5 @@
   den.schema.user = {
     config.classes = lib.mkDefault ["homeManager"];
   };
+  den.schema.host.includes = [den.batteries.mutual-provider];
 }

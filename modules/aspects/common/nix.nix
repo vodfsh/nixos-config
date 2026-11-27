@@ -165,6 +165,7 @@
         # Default to none, add more as necessary. This is usually where
         # electron packages go when they reach EOL.
         permittedInsecurePackages = [
+          "rider-2026.2.4"
           # "electron-33.4.11" # teams-for-linux
         ];
 
